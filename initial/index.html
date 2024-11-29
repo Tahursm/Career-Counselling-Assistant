@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Compass - AI-Powered Career Guidance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #f8f7f9;
+        }
+        .glass-effect {
+            background: rgba(300, 300, 300, 0.95);
+            width:100%;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6d28d9, #be185d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .progress-ring {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
+        /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Container styling */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Input styling */
+.form-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.form-button {
+    background-color: #6d28d9;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #5b21b6;
+}
+
+
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Career Compass</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="file:///C:/xampp/htdocs/tahur1/skillassessment.html" class="text-gray-700 hover:text-purple-600 transition-colors">Assessments</a>
+                    <a href="file:///C:/xampp/htdocs/tahur1/roadmap.html" class="text-gray-700 hover:text-purple-600 transition-colors">Career Roadmap</a>
+                    <a href="file:///C:/xampp/htdocs/tahur1/mentors.html" class="text-gray-700 hover:text-purple-600 transition-colors">Find Mentors</a>
+                        <div class="dropdown ">
+                        <button class=" bi bi-person-fill h-10 w-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white flex items-center justify-center">
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="register.html">Register</a>
+                          <a href="login.html">Login</a>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-24 pb-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 gradient-text">Discover Your Perfect Career Path</h1>
+            <p class="text-gray-600 text-xl mb-12 max-w-2xl mx-auto">
+                Let AI guide you to your ideal career through personalized assessments and real-time market insights
+            </p>
+            <button onclick="startAssessment()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:shadow-lg transition-all" >
+                Start Career Assessment                
+            </button>
+            <script>
+                function startAssessment() {
+                    window.location.href = "file:///D:/tahur1/Career-Counseling-Assistant/public/chatbot.html";
+                }
+                </script>              
+            
+        </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Assessment Card -->
+        <div class="glass-effect p-6 rounded-xl card-hover">
+            <div class="h-12 w-12 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+                <i class="bi bi-clipboard-data text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Skill Assessment</h3>
+            <p class="text-gray-600 mb-4">Discover your strengths and areas for improvement through AI-powered assessments</p>
+            <button onclick="showAssessment()" class="text-purple-600 font-medium hover:text-purple-700">
+                Take Assessment →               
+            </button>
+            <script>
+                function showAssessment() {
+                    window.location.href = "file:///C:/xampp/htdocs/tahur1/skillassessment.html";
+                }
+                </script> 
+
+        </div>
+
+        <!-- Market Insights Card -->
+        <div class="glass-effect p-6 rounded-xl card-hover">
+            <div class="h-12 w-12 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center mb-4">
+                <i class="bi bi-graph-up text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Market Insights</h3>
+            <p class="text-gray-600 mb-4">Stay updated with real-time job market trends and industry demands</p>
+            <button onclick="showInsights()" class="text-pink-600 font-medium hover:text-pink-700">
+                View Insights →
+            </button>
+            <script>
+                function showInsights() {
+                    window.location.href = "C:/xampp/htdocs/tahur1/market.html";
+                }
+                </script>
+        </div>
+
+        <!-- Mentorship Card -->
+        <div class="glass-effect p-6 rounded-xl card-hover">
+            <div class="h-12 w-12 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+                <i class="bi bi-people text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Connect with Mentors</h3>
+            <p class="text-gray-600 mb-4">Get guidance from industry experts and experienced professionals</p>
+            <button onclick="showMentors()" class="text-purple-600 font-medium hover:text-purple-700">
+                Find Mentors →
+                <script>
+                    function showMentors() {
+                        window.location.href = "file:///C:/xampp/htdocs/tahur1/mentors.html";
+                    }
+                    </script>               
+                
+            </button>
+        </div>
+        <!-- Personalised Resource Pack Card -->
+        <div class="glass-effect p-6 rounded-xl card-hover">
+            <div class="h-12 w-12 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+                <i class="bi bi-clipboard-data text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Personalised Resource Pack</h3>
+            <p class="text-gray-600 mb-4">It curates a unique set of resources, including internship listing, relevent online courses, and industry articles, based on each student's goals and interests.</p>
+            <button onclick="showPersonalisedResourcePack()" class="text-purple-600 font-medium hover:text-purple-700">
+                Personalised Resource Pack →               
+            </button>
+            <script>
+                function showPersonalisedResourcePack() {
+                    window.location.href = "file:///D:/tahur1/secret%20task/secret%20task.html";
+                }
+                </script> 
+
+        </div>
+    </div>
+
+    <!-- Progress Section -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="glass-effect rounded-xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">Your Career Progress</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto" viewBox="0 0 100 100">
+                        <circle class="text-gray-200" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50"/>
+                        <circle class="text-purple-600 progress-ring" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" stroke-dasharray="251.2" stroke-dashoffset="50"/>
+                    </svg>
+                    <p class="mt-4 font-medium">Profile Completion</p>
+                </div>
+                <!-- Add more progress indicators here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Navigation functions
+        function toggleProfileMenu() {
+            alert('Profile menu would open here');
+        }
+
+        // Assessment functions
+        function startAssessment() {
+            alert('Starting comprehensive career assessment...');
+        }
+
+        function showAssessment() {
+            alert('Opening detailed skill assessment interface...');
+        }
+
+        function showInsights() {
+            alert('Loading market insights dashboard...');
+        }
+
+        function showMentors() {
+            alert('Opening mentor matching system...');
+        }
+
+        // Animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            observer.observe(card);
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease-out';
+        });
+
+        // Progress ring animation
+        document.querySelectorAll('.progress-ring').forEach(ring => {
+            const radius = ring.r.baseVal.value;
+            const circumference = radius * 2 * Math.PI;
+            ring.style.strokeDasharray = ${circumference} ${circumference};
+            ring.style.strokeDashoffset = circumference - (80 / 100) * circumference;
+        });
+    </script>
+</body>
+</html>

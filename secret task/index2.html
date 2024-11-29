@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Resource Pack</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Personalized Resource Pack</h1>
+
+        <!-- Form to input student profile -->
+        <div class="form-group">
+            <label for="interests">Select your Interests (separate by commas):</label>
+            <input type="text" id="interests" placeholder="e.g., Technology, Data Science, Marketing">
+        </div>
+
+        <div class="form-group">
+            <label for="goals">Enter your Career Goals (separate by commas):</label>
+            <input type="text" id="goals" placeholder="e.g., Data Scientist, Software Engineer">
+        </div>
+
+        <div class="form-group">
+            <label for="skills">Enter your Skills (separate by commas):</label>
+            <input type="text" id="skills" placeholder="e.g., Python, Machine Learning">
+        </div>
+
+        <button class="button" onclick="generateResourcePack()">Generate Resource Pack</button>
+
+        <!-- Display filtered resources -->
+        <div class="resource-section" id="resource-pack">
+            <!-- Resources will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

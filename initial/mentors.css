@@ -1,0 +1,21 @@
+/* Find Mentors CSS */
+.section-container {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-description {
+    font-size: 16px
+}

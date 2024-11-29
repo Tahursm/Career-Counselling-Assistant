@@ -1,0 +1,83 @@
+/* Career Roadmap CSS */
+.section-container {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #374151;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #0288d1;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.section-button {
+    display: inline-block;
+    background-color: #0288d1;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section-button:hover {
+    background-color: #0277bd;
+    transform: scale(1.05);
+}
